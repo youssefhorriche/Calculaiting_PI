@@ -6,7 +6,7 @@
 */
 
 #include <stdio.h>
-#include <avr/io.h>				//Ein- und Ausg‰nge
+#include <avr/io.h>				//Ein- und Ausg√§nge
 #include <avr/interrupt.h>		//Interupt
 #include <math.h>
 #include <stdlib.h>
@@ -170,8 +170,6 @@ void vInterfaceTask(void *pvParameters) {
 
 void vButtonTask(void *pvParameters) {
 	(void) pvParameters;
-	
-	initButtons();
 	
 	while (1) {
 		updateButtons();
